@@ -20,6 +20,9 @@ section img {
     width: 100px;
     height: 100px;
     border-radius: 100px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 section p {
@@ -30,6 +33,7 @@ section p {
     font-size: 14px;
     line-height: 20px;
     position: relative;
+    width: calc(100% - 130px);
 }
 
 section p::before {
@@ -44,3 +48,18 @@ section p::before {
     bottom: 0;
 }
 
+
+.section-2 {
+    flex-direction: row-reverse;
+}
+
+.section-2 p {
+    background: rgb(94, 212, 94);
+    color: white;
+}
+
+.section-2 p::before {
+    left: 99%;
+    border-color: transparent;
+    border-left-color: rgb(94, 212, 94);
+}
